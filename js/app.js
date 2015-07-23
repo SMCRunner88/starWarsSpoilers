@@ -10,7 +10,7 @@ $(".spoiler span").hide();
 $(".spoiler").append("<button>Reveal Spoiler!</button>");
 
 //3. When button is pressed -> show spoiler and get rid of button
-$("button").hover(function(){
+$("button").click(function(){
   $(this).prev().show(); 
   $(this).remove();
 });
